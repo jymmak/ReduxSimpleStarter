@@ -3,12 +3,14 @@ import Header from './Header';
 import Main from './Main';
 
 
+const img ='mifoto.jpg';
+
 
 
 const App = () => (
   <div>
     <Header />
-    <Main />
+    <Main  hobbies={hobbies} img={img} />
    
   </div>
 )

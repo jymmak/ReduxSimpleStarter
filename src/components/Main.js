@@ -1,18 +1,25 @@
 
 import React, { Component } from 'react';
 import './css/main.css';
-import mifoto from './images/mifoto.jpg';
 
 
 
-const Main = () => (
+
+const Main = (img) => (
 
   <div>
     <header>
       <h1>Hobbies</h1>
     </header>
-    <img className='mifoto' src={mifoto} alt='mi foto'></img>
-    <p>Escuchar música</p>
+    <img src={img} alt={img} />
+    <ul>
+      {
+        hobbies.map(hobbie => {
+          return <li key={hobbie}>{hobbie}</li>
+        })
+      }
+
+    </ul>
   </div>
 
 )
